@@ -1,2 +1,3 @@
 # sas-geocode
-Use SAS and API to geocode an address
+
+Use SAS and some APIs to geocode a suburb to it's centroid

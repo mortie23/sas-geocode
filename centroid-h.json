@@ -1,0 +1,12 @@
+Transfer-Encoding:chunked
+null:HTTP/1.1 200 OK
+CF-Cache-Status:DYNAMIC
+CF-RAY:59749e9eded965af-SYD
+Server:cloudflare
+Connection:keep-alive
+Vary:Accept,Cookie,Host
+Set-Cookie:__cfduid=db419a9b9ec0a54d159a8f3ddef8882971590130401; expires=Sun, 21-Jun-20 06:53:21 GMT; path=/; domain=.postcodeapi.com.au; HttpOnly; SameSite=Lax
+Date:Fri, 22 May 2020 06:53:21 GMT
+cf-request-id:02dcc17743000065aff8a90200000001
+Allow:GET, HEAD, OPTIONS
+Content-Type:application/json; charset=utf-8
