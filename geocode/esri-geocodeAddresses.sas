@@ -20,17 +20,25 @@ run;
 libname geocode "&pwd.";
 
 * Build the in;
-filename indata "&pwd.\indata.txt";
+filename indata temp;
 data addresses;
-	length jsondata $1000. urldata $1000.;
-	file indata;
-	jsondata='
+  length jsondata $32767. urldata $32767. putString $32767.;
+  file indata;
+  jsondata='
 {"records":[{"attributes":{"OBJECTID":1,"Address":"380 New York St","Neighborhood":"","City":"Redlands","Subregion":"","Region":"CA"}}
 ,{"attributes":{"OBJECTID":2,"Address":"1 World Way","Neighborhood":"","City":"Los Angeles","Subregion":"","Region":"CA"}}]}';
-	urldata=urlencode(jsondata);
-	f='json';
-	token="&token";
-	put 'f=' f '&token=' token '&addresses=' urldata;
+     urldata=urlencode(strip(jsondata));
+     f='pjson';
+  category='';
+  sourceCountry='';
+  outSR='';
+  putString=cats('f=',f,'&token=',token,'&addresses=',urldata,'&category=',category,'&sourceCountry=',sourceCountry,'&outSR=',outSR);
+  put putString;
+run;
+data _null_;
+  infile indata;
+  input;
+  put _infile_;
 run;
 
 *	Make the call;
