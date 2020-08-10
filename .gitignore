@@ -1,2 +1,5 @@
 geocode/api-key.sas
+geocode/env.sas
 .metadata
+.env
+indata.txt

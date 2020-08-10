@@ -1,0 +1,13 @@
+null:HTTP/1.1 200
+Server:
+X-Content-Type-Options:nosniff
+Connection:keep-alive
+X-Cached:EXPIRED
+Date:Mon, 10 Aug 2020 00:34:01 GMT
+Cache-Control:max-age=300
+ETag:c0a72992
+Vary:Origin,Accept-Encoding
+X-XSS-Protection:1; mode=block
+Content-Length:1213
+x-esri-ftiles-cache-compress:true
+Content-Type:application/json;charset=UTF-8

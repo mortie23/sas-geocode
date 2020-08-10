@@ -1,1 +1,13 @@
-[{"name": "Kambah", "postcode": 2902, "state": {"name": "Australian Capital Territory", "abbreviation": "ACT"}, "locality": "CANBERRA", "latitude": -35.388800000000003, "longitude": 149.04730000000001}]
+[
+  {
+    "name": "Kambah",
+    "postcode": 2902,
+    "state": {
+      "name": "Australian Capital Territory",
+      "abbreviation": "ACT"
+    },
+    "locality": "CANBERRA",
+    "latitude": -35.388800000000003,
+    "longitude": 149.04730000000001
+  }
+]
