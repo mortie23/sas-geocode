@@ -4,11 +4,11 @@ Use SAS and some APIs to geocode some addresses.
 
 ## Prereqs
 
-### Using WPS to replacate SAS runtime
+### Using WPS to replicate SAS runtime
 
 You may have an enterprise instance of SAS and an Enterprise instance of ESRI APIs, but want to develop offline a solution.  ESRI have free APIs for development use.  SAS has SAS university, or you can use WPS.  
 
-Get the comminity edition.  
+Get the community edition.  
 
 [Download](https://www.worldprogramming.com/try-or-buy/editions/)
 
@@ -20,13 +20,13 @@ Install Postman:
 
 ## This easy free one
 
-This method uses the publically available ESRI API to find address candidates.  
+This method uses the publicly available ESRI API to find address candidates.  
 At an enterprise you may have an internal version of this API?  
 
 ![Find Address Candidates](media/postman-findAddressCandidates.png)
 
 GET: `https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates`  
-Parameteres: 
+Parameters: 
 ```ini
 f='json'
 singleLine='4730 Crystal Springs Dr, Los Angeles, CA 90027'
@@ -102,7 +102,7 @@ outFields='Match_addr,Addr_type'
 
 ### Now with SAS
 
-Here is a way to do it manially. Surely you have a list of addresses in a table/file/dataset and you want to loop through these and generate the URL from the input data.  
+Here is a way to do it manually. Surely you have a list of addresses in a table/file/dataset and you want to loop through these and generate the URL from the input data.  
 So far this example hasn't built this level of automation.  Pull requests welcome.  
 
 ```sas
@@ -131,8 +131,8 @@ run;
 
 ## Multiple Addresses (nested JSON input)
 
-This method uses the publically available ESRI API to geocode addresses in batch.  
-It requires you to sign upp for a develop account to get a token.  
+This method uses the publicly available ESRI API to geocode addresses in batch.  
+It requires you to sign up for a developer account to get a token.  
 
 ![Geocode Address](media/postman-geocodeAddresses.png)
 
