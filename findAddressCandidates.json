@@ -1,62 +1,20 @@
 {
-    "spatialReference": {
-        "wkid": 4326,
-        "latestWkid": 4326
-    },
-    "candidates": [
-        {
-            "address": "4730 Crystal Springs Dr, Los Angeles, California, 90027",
-            "location": {
-                "x": -118.27290099965077,
-                "y": 34.120139998439768
-            },
-            "score": 100,
-            "attributes": {
-                "Match_addr": "4730 Crystal Springs Dr, Los Angeles, California, 90027",
-                "Addr_type": "PointAddress"
-            },
-            "extent": {
-                "xmin": -118.27390099965078,
-                "ymin": 34.119139998439771,
-                "xmax": -118.27190099965077,
-                "ymax": 34.121139998439766
-            }
-        },
-        {
-            "address": "4730 Crystal Springs Rd, Los Angeles, California, 90027",
-            "location": {
-                "x": -118.29234497561468,
-                "y": 34.140624544224202
-            },
-            "score": 98.040000000000006,
-            "attributes": {
-                "Match_addr": "4730 Crystal Springs Rd, Los Angeles, California, 90027",
-                "Addr_type": "StreetAddress"
-            },
-            "extent": {
-                "xmin": -118.29334497561469,
-                "ymin": 34.139624544224205,
-                "xmax": -118.29134497561468,
-                "ymax": 34.1416245442242
-            }
-        },
-        {
-            "address": "4730 Crystal Springs Rd, Los Angeles, California, 90027",
-            "location": {
-                "x": -118.29227308293807,
-                "y": 34.140516730329004
-            },
-            "score": 98.040000000000006,
-            "attributes": {
-                "Match_addr": "4730 Crystal Springs Rd, Los Angeles, California, 90027",
-                "Addr_type": "StreetAddress"
-            },
-            "extent": {
-                "xmin": -118.29327308293807,
-                "ymin": 34.139516730329007,
-                "xmax": -118.29127308293806,
-                "ymax": 34.141516730329002
-            }
-        }
-    ]
+  "spatialReference": { "wkid": 4326, "latestWkid": 4326 },
+  "candidates": [
+    {
+      "address": "23 Furzer St, Woden, Canberra, Australian Capital Territory, 2606",
+      "location": { "x": 149.08414612291187, "y": -35.342603047384671 },
+      "score": 100,
+      "attributes": {
+        "Match_addr": "23 Furzer St, Woden, Canberra, Australian Capital Territory, 2606",
+        "Addr_type": "StreetAddress"
+      },
+      "extent": {
+        "xmin": 149.08314612291187,
+        "ymin": -35.343603047384669,
+        "xmax": 149.08514612291188,
+        "ymax": -35.341603047384673
+      }
+    }
+  ]
 }

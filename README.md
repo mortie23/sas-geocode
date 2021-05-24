@@ -14,6 +14,10 @@ Get the community edition.
 
 ### Using Postman
 
+> TIP: If you are already using VSCode as your development tool, then you can use the Thunder Client instead of installing a seperate application.
+
+![Thunder client](media/vscode-thunder-client.png)
+
 Install Postman:
 
 [Download](https://www.postman.com/downloads/)
@@ -130,6 +134,8 @@ run;
 ```
 
 ## Multiple Addresses (nested JSON input)
+
+> NOTE: things have changed a lot since I put this together. Looks like certain things that were free are not longer free. 
 
 This method uses the publicly available ESRI API to geocode addresses in batch.  
 It requires you to sign up for a developer account to get a token.  
@@ -358,7 +364,7 @@ filename ga "&pwd.\geocodeAddresses.json" lrecl=100000000;
 filename ga_h "&pwd.\geocodeAddresses.header";
 proc http 
  method="POST"
- url='https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/geocogeAddresses?'
+ url='https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/geocodeAddresses?'
  in=indata
  out=ga
  headerout=ga_h;
